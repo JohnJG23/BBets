@@ -55,7 +55,10 @@ savestats <- favstats(teacher)
 We can infer that Mr.BrLw is making an average of `r savestats$mean` with a standard deviation of `r savestats$sd`. 
 
 ## the standard deviation and a 95% confidence interval for their earnings?
-  
+
+In a 95% confidence interval, BrLw's earning is `r savestats$mean - 2*savestats$mean` to `r savestats$mean + 2*savestats$mean`  
+
+ 
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
@@ -99,3 +102,4 @@ The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+We learned that there is more to r than just cat-cat Numerical-cat helper files, in order to explain the answer. In the beginning we made an order to run this assignment and go ahead and carry the assignment out. We learned to experiment with setting up a simulation for the odds of an outcome and produced ansewrs for question number 1, 2, and 3.  
