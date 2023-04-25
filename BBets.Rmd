@@ -66,12 +66,18 @@ The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+teacher <- numeric(200) 
+for(i in 1:40) {
+teacher[i]=BrLw(numClass=28)
 
 
 
+}
+favstats(teacher)
+```
 
-
-
+The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545 we get the possibility of the mean being just a negative number very close to 0. Due to having a negative number that would result in Brownlow mostly losing money, thus zero earnings.  
 
 # Discussion and Conclusion
 
