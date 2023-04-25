@@ -37,7 +37,23 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 The function will be given a class_size by number of students, odds, and Number_of_times brownlow made the bet.  It will give you back how much Brownlows earnings were. We will use it to answer our three questions below. If you can, improve this function by giving default values to some of its inputs. 
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
+
 ## what is their average earnings
+
+```{r}
+options(digits = 1)
+teacher <- numeric(400) 
+for(i in 1:400) {
+teacher[i]=BrLw()
+
+
+
+}
+savestats <- favstats(teacher)
+```
+
+We can infer that Mr.BrLw is making an average of `r savestats$mean` with a standard deviation of `r savestats$sd`. 
+
 ## the standard deviation and a 95% confidence interval for their earnings?
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
@@ -45,7 +61,7 @@ The function will be given a class_size by number of students, odds, and Number_
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 ```{r}
-teacher <- numeric(40) 
+teacher <- numeric(200) 
 for(i in 1:40) {
 teacher[i]=BrLw(odds = 4.454545 )
 
@@ -55,7 +71,7 @@ teacher[i]=BrLw(odds = 4.454545 )
 favstats(teacher)
 ```
 
-The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545 we get the possibility of the mean being just a number very close to 0. Due to having an unstable mean you have to construct the fair odds possibility. That is why if you change the number of Brownlows to about 300 or 400 instead of 40 and we see that running this outcome produces a negative and sometimes positive number very close to the preferred mean many times.     
+The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545 we get the possibility of the mean being just a number very close to 0. Due to having an unstable mean you have to construct the fair odds possibility. That is why if you change the number of Brownlows to about 300 or 400 instead of 40 and the 1:2 value we see that running this outcome produces a negative and sometimes positive number very close to the preferred mean many times.     
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
@@ -67,7 +83,7 @@ The mean equivalent to 0 is difficult to manipulate, but at the odds of 4.454545
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 ```{r}
-teacher <- numeric(200) 
+teacher <- numeric(40) 
 for(i in 1:40) {
 teacher[i]=BrLw(numClass=28)
 
